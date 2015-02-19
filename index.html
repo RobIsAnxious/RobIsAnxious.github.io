@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<audio id="myAss">
+	<source src='sounds/ass.mp3'></source>
+</audio>
+<audio id="myDicks">
+	<source src='sounds/dicks.mp3'></source>
+</audio>
+<audio id="myPeen">
+	<source src='sounds/peen.mp3'></source>
+</audio>
+<audio id="myPiss">
+	<source src='sounds/piss.mp3'></source>
+</audio>
+<meta charset="utf-8">
+<title>Cool ass soundboard...</title>
+<style type="text/css">
+
+h1{
+	text-align: center;
+}
+
+.redSquare{
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+
+}
+
+.blueSquare{
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+
+.greenSquare{
+margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-color: green;
+}
+
+.yellowSquare{
+margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-color: gold;
+}
+
+
+</style>
+</head>
+
+<body>
+<h1>Rob Moore: Web God</h1>
+<div class="content">
+	<div class="redSquare" id="red">
+	</div>
+	<div class="blueSquare" id="blue">
+	</div>
+	<div class="greenSquare" id="green">
+	</div>
+	<div class="yellowSquare" id="yellow">
+	</div>
+</div>
+
+<script type="text/javascript">
+
+//Animations
+$('#red').click(function () {
+    $(this).animate({
+        'width': '70px',
+        'height': '70px'
+    }, 200);
+
+    $(this).animate({
+        'width': '100px',
+        'height': '100px'
+    }, 200);
+
+});
+
+$('#blue').click(function () {
+    $(this).animate({
+        'width': '70px',
+        'height': '70px'
+    }, 200);
+    $(this).animate({
+        'width': '100px',
+        'height': '100px'
+    }, 200);
+
+});
+
+$('#green').click(function () {
+    $(this).animate({
+        'width': '70px',
+        'height': '70px'
+    }, 200);
+    $(this).animate({
+        'width': '100px',
+        'height': '100px'
+    }, 200);
+
+});
+
+$('#yellow').click(function () {
+    $(this).animate({
+        'width': '70px',
+        'height': '70px'
+    }, 200);
+    $(this).animate({
+        'width': '100px',
+        'height': '100px'
+    }, 200);
+
+});
+
+//Sound playing
+var ass = $('#myAss')[0];
+$('#red').click(function(){
+	ass.play();
+});
+
+var dicks = $('#myDicks')[0];
+$('#blue').click(function(){
+	dicks.play();
+});
+
+var peen = $('#myPeen')[0];
+$('#green').click(function(){
+	peen.play();
+});
+
+var piss = $('#myPiss')[0];
+$('#yellow').click(function(){
+	piss.play();
+});
+
+</script>
+
+</body>
+</html>
