@@ -1,0 +1,40 @@
+
+h1, h2{
+	text-align: center;
+    font-family: sans-serif;
+}
+
+h2 a{
+    text-decoration: none;
+    
+}
+
+.content{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.redSquare:hover, .blueSquare:hover, .greenSquare:hover, .yellowSquare:hover{
+    border: solid 2px;
+}
+
+.redSquare, .blueSquare, .greenSquare, .yellowSquare{
+    display: inline-block;
+	margin: 150px auto;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+
+}
+
+.blueSquare{
+	background-color: blue;
+}
+
+.greenSquare{
+	background-color: green;
+}
+
+.yellowSquare{
+	background-color: gold;
+}

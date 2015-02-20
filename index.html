@@ -2,75 +2,32 @@
 <html lang="en-us">
 
 <head>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-59954848-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<audio id="myAss">
-	<source src='sounds/ass.mp3'></source>
-</audio>
-<audio id="myDicks">
-	<source src='sounds/dicks.mp3'></source>
-</audio>
-<audio id="myPeen">
-	<source src='sounds/peen.mp3'></source>
-</audio>
-<audio id="myPiss">
-	<source src='sounds/piss.mp3'></source>
-</audio>
-<meta charset="utf-8">
-<title>Cool ass soundboard...</title>
-<style type="text/css">
-
-h1, h2{
-	text-align: center;
-    font-family: sans-serif;
-}
-
-h2 a{
-    text-decoration: none;
-    
-}
-
-.content{
-    margin: 0 auto;
-    text-align: center;
-}
-
-.redSquare:hover, .blueSquare:hover, .greenSquare:hover, .yellowSquare:hover{
-    border: solid 2px;
-}
-
-.redSquare, .blueSquare, .greenSquare, .yellowSquare{
-    display: inline-block;
-	margin: 150px auto;
-	height: 100px;
-	width: 100px;
-	background-color: red;
-
-}
-
-.blueSquare{
-	background-color: blue;
-}
-
-.greenSquare{
-	background-color: green;
-}
-
-.yellowSquare{
-	background-color: gold;
-}
-
-
-</style>
+      ga('create', 'UA-59954848-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <audio id="myAss">
+    	<source src='sounds/ass.mp3'></source>
+    </audio>
+    <audio id="myDicks">
+    	<source src='sounds/dicks.mp3'></source>
+    </audio>
+    <audio id="myPeen">
+    	<source src='sounds/peen.mp3'></source>
+    </audio>
+    <audio id="myPiss">
+    	<source src='sounds/piss.mp3'></source>
+    </audio>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <meta charset="utf-8">
+    <title>Cool ass soundboard...</title>
 </head>
 
 <body>
@@ -86,85 +43,6 @@ h2 a{
 	<div class="yellowSquare" id="yellow">
 	</div>
 </div>
-
-<script type="text/javascript">
-
-//Animations
-$('#red').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-$('#blue').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-$('#green').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-$('#yellow').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-//Sound playing
-var ass = $('#myAss')[0];
-$('#red').click(function(){
-	ass.currentTime=0;
-    ass.play();
-});
-
-var dicks = $('#myDicks')[0];
-$('#blue').click(function(){
-    dicks.currentTime=0;
-	dicks.play();
-});
-
-var peen = $('#myPeen')[0];
-$('#green').click(function(){
-    peen.currentTime=0;
-	peen.play();
-});
-
-var piss = $('#myPiss')[0];
-$('#yellow').click(function(){
-    piss.currentTime=0;
-	piss.play();
-});
-
-</script>
-
+ <script type="text/javascript" src="animatesound.js"></script>
 </body>
 </html>
