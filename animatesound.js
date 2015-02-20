@@ -1,6 +1,6 @@
 
 //Animations
-if ($(window).width() > 300){
+if ($(window).width() >= 301){
 
 $('#red').click(function () {
     $(this).animate({
