@@ -42,7 +42,7 @@ h2 a{
 
 /* Media queries. Mobile build. */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 300px){
 	body {
 	background-color: white;
 	}
