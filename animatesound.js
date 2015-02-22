@@ -1,8 +1,7 @@
 
 //Animations
-if ($(window).width() > 600){
 
-$('#red').click(function () {
+$('.square').click(function () {
     $(this).animate({
         'width': '70px',
         'height': '70px'
@@ -14,91 +13,6 @@ $('#red').click(function () {
     }, 200);
 
 });
-
-$('#blue').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-$('#green').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-$('#yellow').click(function () {
-    $(this).animate({
-        'width': '70px',
-        'height': '70px'
-    }, 200);
-    $(this).animate({
-        'width': '100px',
-        'height': '100px'
-    }, 200);
-
-});
-
-}
-
-else {
-$('#blue').click(function () {
-    $(this).animate({
-        'width': '50%'
-    }, 200);
-
-    $(this).animate({
-        'width': '100%'
-    }, 200);
-
-});
-
-$('#green').click(function () {
-    $(this).animate({
-        'width': '50%'
-    }, 200);
-
-    $(this).animate({
-        'width': '100%'
-    }, 200);
-
-});
-
-$('#yellow').click(function () {
-    $(this).animate({
-        'width': '50%'
-    }, 200);
-
-    $(this).animate({
-        'width': '100%'
-    }, 200);
-
-});
-
-$('#red').click(function () {
-    $(this).animate({
-        'width': '50%'
-    }, 200);
-
-    $(this).animate({
-        'width': '100%'
-    }, 200);
-
-});
-
-}
 
 //Sound playing
 var ass = $('#myAss')[0];

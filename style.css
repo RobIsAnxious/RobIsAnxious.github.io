@@ -14,35 +14,38 @@ h2 a{
     text-align: center;
 }
 
-.redSquare:hover, .blueSquare:hover, .greenSquare:hover, .yellowSquare:hover{
+.square:hover{
     border: solid 2px;
 }
 
-.redSquare, .blueSquare, .greenSquare, .yellowSquare{
+.square{
     display: inline-block;
 	margin: 150px auto;
 	height: 100px;
 	width: 100px;
-	background-color: red;
 
 }
 
-.blueSquare{
+#red {
+	background-color: red;
+}
+
+#blue{
 	background-color: blue;
 }
 
-.greenSquare{
+#green{
 	background-color: green;
 }
 
-.yellowSquare{
+#yellow{
 	background-color: gold;
 }
 
 
 /* Media queries. Mobile build. */
 
-@media handheld and (max-width: 500px){
+/*@media handheld and (max-width: 600px){
 	body {
 	background-color: white;
 	}
@@ -64,4 +67,4 @@ h2 a{
 	margin: 0 auto;
 	width: 100%;
 	}
-}
+}*/
