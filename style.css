@@ -1,5 +1,5 @@
 
-h1, h2{
+h1, h2, p{
 	text-align: center;
     font-family: sans-serif;
 }
@@ -7,6 +7,12 @@ h1, h2{
 h2 a{
     text-decoration: none;
     
+}
+
+#text {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30px;
 }
 
 .content{
